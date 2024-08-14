@@ -9,7 +9,7 @@ const Typing = () => (
       strings={[
         'social media manager',
         'virtual assistant',
-        'telegram bot setup',
+        'telegram moderator',
       ]}
       typeSpeed={50}
       backSpeed={30}
