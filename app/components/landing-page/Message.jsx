@@ -48,7 +48,7 @@ const Message = () => {
   }
 
   return (
-    <div className="relative bg-white">
+    <div className="relative bg-gradient-to-r from-transparent via-[#ffeee6] to-[#f1e2f9]">
       <div className="absolute -top-10" id="message-me"></div>
       <div className="container relative mx-auto flex flex-col items-center px-3 py-[50px] sm:px-[26px] lg:py-[80px] xl:py-[125px]">
         <div className="heading space-y-2 text-3xl font-bold sm:text-5xl">

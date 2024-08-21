@@ -7,16 +7,19 @@ import Link from 'next/link'
 const Services = () => {
   const services = [
     {
+      _id: '66c5d280685eb7ac8f5e5026',
       icon: Manager,
       title: 'Community Manager',
       text: 'I am passionate about building and managing online communities that are vibrant, engaged, and supportive.',
     },
     {
+      _id: '66c5d280685eb7ac8f5e5027',
       icon: Assistant,
       title: 'Virtual Assistant',
       text: 'I am a virtual assistant with experience in data entry, copy-pasting, and visual assistance.',
     },
     {
+      _id: '66c5d280685eb7ac8f5e5028',
       icon: Bot,
       title: 'Telegram Bot Setup',
       text: 'I can setup professionally all the bots in your crypto telegram group.',
@@ -29,7 +32,8 @@ const Services = () => {
       <div className="container mx-auto grid grid-cols-1 items-center gap-10 py-8 sm:gap-20 sm:px-8 sm:py-[100px] md:grid-cols-2">
         <div className="left flex flex-col rounded-lg bg-[#fff2ea] p-3 sm:p-5">
           {services.map((item, index) => (
-            <div
+            <Link
+              href={`/service-details?_id=${item._id}`}
               key={index}
               className="item rounded-lg from-[#fecacc] via-[#fecacc] to-[#cda6e9] hover:bg-gradient-to-br"
             >
@@ -39,6 +43,7 @@ const Services = () => {
                     src={item.icon}
                     alt="manager"
                     className="h-full w-auto"
+                    unoptimized={true}
                   />
                 </div>
                 <div className="text space-y-1">
@@ -46,7 +51,7 @@ const Services = () => {
                   <p className="text-sm text-gray-500">{item.text}</p>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         <div className="right flex flex-col items-center gap-5 px-5 text-center sm:items-start sm:px-0 sm:text-start">
