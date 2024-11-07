@@ -24,6 +24,10 @@ const Header = () => {
       href: '#sample-works',
       link: 'Sample works',
     },
+    {
+      href: '#client-reviews',
+      link: 'Client Reviews',
+    },
   ]
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)

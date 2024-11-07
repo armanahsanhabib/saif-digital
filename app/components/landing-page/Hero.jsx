@@ -1,6 +1,5 @@
-import Saiful from '@/public/saiful image.png'
-import Image from 'next/image'
-import Link from 'next/link'
+// import Saiful from '@/public/saiful image.png'
+// import Image from 'next/image'
 import Typing from './Typing'
 
 const Hero = () => {
@@ -20,19 +19,20 @@ const Hero = () => {
               <Typing />
             </div>
             <p className="text-sm text-gray-500 sm:text-base">
-              I'm a multi-skilled person. I love to explore new skills
+              I&apos;m a multi-skilled person. I love to explore new skills
               regularly. I’m a quick learner and easily cope with new tech
-              things and platforms. I have 2 years of experience managing
+              things and platforms. I have 3 years of experience managing
               Discord, telegram servers, and social media platforms.
             </p>
-            <Link
-              href={'/'}
+            <a
+              href={'https://www.fiverr.com/saifulb410'}
+              target="_blank"
               className="w-max rounded-md bg-orange-500 px-8 py-2 font-medium text-white hover:bg-orange-600"
             >
               Hire Me
-            </Link>
+            </a>
           </div>
-          <div
+          {/* <div
             className="photo order-first flex h-full flex-col md:order-none"
             // style={{
             //   backgroundImage: `url('/hero_bg.svg')`,
@@ -47,7 +47,7 @@ const Hero = () => {
               alt="saiful islam"
               className="mx-auto w-[90%] md:w-full"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

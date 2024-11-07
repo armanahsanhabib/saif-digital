@@ -25,7 +25,8 @@ const Reviews = async () => {
   }
 
   return (
-    <div className="container mx-auto flex flex-col items-center px-2 py-10 sm:px-4 sm:py-[150px] md:px-8">
+    <div className="container relative mx-auto flex flex-col items-center px-2 py-10 sm:px-4 sm:py-[150px] md:px-8">
+      <div className="absolute top-0" id="client-reviews"></div>
       <div className="heading relative space-y-2 text-3xl font-bold sm:text-5xl">
         <h1 className="relative z-10 inline-block">
           Client <span className="text-orange-500">Reviews</span>

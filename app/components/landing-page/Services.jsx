@@ -1,4 +1,5 @@
 import Bot from '@/public/icons/ai-voice-generator.gif'
+import Chatting from '@/public/icons/conversation.gif'
 import Manager from '@/public/icons/management-consulting.gif'
 import Assistant from '@/public/icons/online-support.gif'
 import Image from 'next/image'
@@ -7,22 +8,28 @@ import Link from 'next/link'
 const Services = () => {
   const services = [
     {
-      _id: '66c5d280685eb7ac8f5e5026',
+      url: 'https://www.fiverr.com/s/R7NDkbV',
       icon: Manager,
       title: 'Community Manager',
       text: 'I am passionate about building and managing online communities that are vibrant, engaged, and supportive.',
     },
     {
-      _id: '66c5d280685eb7ac8f5e5027',
+      url: 'https://www.fiverr.com/s/DBKLqRN',
       icon: Assistant,
       title: 'Virtual Assistant',
       text: 'I am a virtual assistant with experience in data entry, copy-pasting, and visual assistance.',
     },
     {
-      _id: '66c5d280685eb7ac8f5e5028',
+      url: 'https://www.fiverr.com/s/vvdkBEq',
       icon: Bot,
       title: 'Telegram Bot Setup',
       text: 'I can setup professionally all the bots in your crypto telegram group.',
+    },
+    {
+      url: 'https://www.fiverr.com/s/vvdkB9z',
+      icon: Chatting,
+      title: 'Telegram Chatter',
+      text: 'I will be your telegram community manager with 5 to 20 chatter',
     },
   ]
 
@@ -33,8 +40,9 @@ const Services = () => {
         <div className="left flex flex-col rounded-lg bg-[#fff2ea] p-3 sm:p-5">
           {services.map((item, index) => (
             <Link
-              href={`/service-details?_id=${item._id}`}
+              href={item.url}
               key={index}
+              target="_blank"
               className="item rounded-lg from-[#fecacc] via-[#fecacc] to-[#cda6e9] hover:bg-gradient-to-br"
             >
               <div className="m-3 flex items-center gap-4 rounded-lg border bg-white p-4 sm:m-5">
@@ -59,18 +67,20 @@ const Services = () => {
             <h1>My Awesome</h1>
             <h1 className="text-orange-500">Services</h1>
           </div>
-          <p className="text-gray-600">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-            ducimus deserunt? Quaerat tempore voluptatem quis saepe libero
-            inventore aliquam qui animi expedita fuga id tempora repellendus, ad
-            labore? Voluptatem facilis quaerat voluptas ex enim vitae
-            consectetur! Laboriosam, tenetur suscipit! Accusamus dolore placeat
-            amet ex, saepe tenetur, nostrum ad assumenda praesentium delectus
-            reprehenderit quam dolorem a pariatur velit ut maxime laudantium,
-            cumque rem.
-          </p>
+          <ol className="list-inside list-decimal">
+            <li>Discord Server Moderator</li>
+            <li>Community Management</li>
+            <li>Instagram Management</li>
+            <li>Twitter Management</li>
+            <li>Telegram Moderator</li>
+            <li>Social Media Follower Growth</li>
+            <li>Facebook Management</li>
+            <li>Telegram Bot Setup</li>
+          </ol>
+
           <Link
-            href={'/'}
+            href={'/saiful cv.jpg'}
+            target="_blank"
             className="block w-max rounded-md bg-orange-500 px-5 py-2 font-medium text-white hover:bg-orange-600"
           >
             Download CV
