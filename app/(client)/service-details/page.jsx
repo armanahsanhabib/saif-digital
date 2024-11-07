@@ -13,8 +13,8 @@ const page = async ({ searchParams }) => {
         <div className="text-center">
           <h1 className="text-4xl font-bold text-red-600">Service Not Found</h1>
           <p className="mt-4 text-lg">
-            Sorry, the service you're looking for doesn't exist or has been
-            removed.
+            Sorry, the service you&apos;re looking for doesn&apos;t exist or has
+            been removed.
           </p>
         </div>
       </div>

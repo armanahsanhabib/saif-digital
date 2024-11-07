@@ -4,7 +4,7 @@ import { ReactTyped } from 'react-typed'
 
 const Typing = () => (
   <h2 className="text-xl font-semibold sm:text-2xl">
-    I'm a{' '}
+    I&apos;m a{' '}
     <ReactTyped
       strings={[
         'social media manager',
